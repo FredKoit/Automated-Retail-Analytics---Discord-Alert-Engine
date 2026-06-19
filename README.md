@@ -47,16 +47,17 @@ The pipeline operates seamlessly in four distinct phases:
    ```
 
 3. Initialize the local environment and generate the mock transaction data:
+
    ```bash
    python setup_db.py
    ```
 
-````
-
 4. Open `generate_report.py` and paste your unique Discord Webhook URL into the global variable:
 
    ```python
-  DISCORD_WEBHOOK_URL = "YOUR_SECRET_URL"
+   DISCORD_WEBHOOK_URL = "YOUR_SECRET_URL"
+   ```
+
 ````
 
 5. Trigger the pipeline manually to test the integration:
@@ -78,3 +79,4 @@ To scale this into a multi-environment corporate asset, future iterations will f
 - **Multi-Channel Routing:** Extending the notification layer to simultaneously deliver custom HTML emails via Amazon SES or SendGrid.
 
 ```
+````
