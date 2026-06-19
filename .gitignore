@@ -1,0 +1,31 @@
+# CSV files
+*.csv
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+*.dbf
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+
+# Environment
+.env
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
