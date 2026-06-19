@@ -41,29 +41,29 @@ The pipeline operates seamlessly in four distinct phases:
 
 1. Clone this repository to your local machine.
 2. Install the necessary network dependency:
+
    ```bash
    pip install requests
    ```
 
-````
-
 3. Initialize the local environment and generate the mock transaction data:
-```bash
-python setup_db.py
+   ```bash
+   python setup_db.py
+   ```
 
 ````
 
 4. Open `generate_report.py` and paste your unique Discord Webhook URL into the global variable:
 
-```python
-DISCORD_WEBHOOK_URL = "YOUR_SECRET_URL"
-
-```
+   ```python
+  DISCORD_WEBHOOK_URL = "YOUR_SECRET_URL"
+````
 
 5. Trigger the pipeline manually to test the integration:
 
-```bash
-python generate_report.py
+   ```bash
+   python generate_report.py
+   ```
 
 ```
 
@@ -76,7 +76,5 @@ To scale this into a multi-environment corporate asset, future iterations will f
 - **Securing Credentials:** Migrating the hardcoded Webhook URL out of the source code and into a `.env` file using `python-dotenv` to maintain industry-standard security.
 - **Database Scalability:** Moving the local SQLite storage engine to an external cloud database instance like PostgreSQL hosted on AWS RDS.
 - **Multi-Channel Routing:** Extending the notification layer to simultaneously deliver custom HTML emails via Amazon SES or SendGrid.
-
-```
 
 ```
