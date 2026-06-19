@@ -2,7 +2,7 @@ import sqlite3
 from datetime import datetime
 import requests  
 
-DISCORD_WEBHOOK_URL = "https://discordapp.com/api/webhooks/1517436304437149886/68oVsL40IUfqZ-UGhQ-fsMRLnwE-fugQ96JVFaAQhUviCzndSwhuz0t8GsL7cnFj0Qn2"
+DISCORD_WEBHOOK_URL = "YOUR_SECRET_URL"
 
 def generate_and_send_report():
     # 1. Connect to our existing database and run calculations
