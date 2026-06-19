@@ -64,8 +64,6 @@ The pipeline operates seamlessly in four distinct phases:
    python generate_report.py
    ```
 
-```
-
 ---
 
 ## 🔮 Future Roadmap (Production Upgrades)
@@ -75,6 +73,8 @@ To scale this into a multi-environment corporate asset, future iterations will f
 - **Securing Credentials:** Migrating the hardcoded Webhook URL out of the source code and into a `.env` file using `python-dotenv` to maintain industry-standard security.
 - **Database Scalability:** Moving the local SQLite storage engine to an external cloud database instance like PostgreSQL hosted on AWS RDS.
 - **Multi-Channel Routing:** Extending the notification layer to simultaneously deliver custom HTML emails via Amazon SES or SendGrid.
+
+```
 
 ```
 
