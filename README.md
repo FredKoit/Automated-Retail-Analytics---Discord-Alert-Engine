@@ -58,8 +58,6 @@ The pipeline operates seamlessly in four distinct phases:
    DISCORD_WEBHOOK_URL = "YOUR_SECRET_URL"
    ```
 
-````
-
 5. Trigger the pipeline manually to test the integration:
 
    ```bash
@@ -79,4 +77,7 @@ To scale this into a multi-environment corporate asset, future iterations will f
 - **Multi-Channel Routing:** Extending the notification layer to simultaneously deliver custom HTML emails via Amazon SES or SendGrid.
 
 ```
-````
+
+```
+
+```
